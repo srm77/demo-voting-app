@@ -10,4 +10,4 @@ metadata:
     - name: redis
       image: redis
       ports:
-      - containerPort: 6389
+      - containerPort: 6379
