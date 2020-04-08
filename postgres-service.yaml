@@ -5,11 +5,11 @@ metadata:
   labels:
     name: db-service
     app: demo-voting-app
-  spec:
-    type: LoadBalancer
-    ports:
-    - port: 5432
-      targetPort: 5432
-    selector:
-      name: postgres-pod
-      app: demo-voting-app
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 5432
+    targetPort: 5432
+  selector:
+    name: postgres-pod
+    app: demo-voting-app
