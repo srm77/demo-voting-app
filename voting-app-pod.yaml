@@ -6,7 +6,6 @@ metadata:
     name: voting-app-pod
     app: demo-voting-app
 spec:
-  type: LoadBalancer
   containers:
   - name: voting-app
     image: dockersamples/examplevotingapp_vote
