@@ -5,10 +5,10 @@ metadata:
   labels:
     name: voting-service
     app: demo-voting-app
-  spec:
-    ports:
-      - port: 80
-        target: 80
-      selector:
-        name: voting-app-pod
-        app: demo-voting-app
+spec:
+  ports:
+  - port: 80
+    target: 80
+  selector:
+    name: voting-app-pod
+    app: demo-voting-app
