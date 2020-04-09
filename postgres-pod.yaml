@@ -8,6 +8,9 @@ metadata:
 spec:
   containers:
   - name: postgres
+    env:
+    - name: POSTGRES_PASSWORD
+      value: mysecretpassword
     image: postgres:9.4
     ports:
     - containerPort: 5432
